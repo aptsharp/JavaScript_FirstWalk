@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAIS</title>
+
+</head>
+<body>
+    <h1>Selecionando e exibindo o pais de origem</h1>
+    digite seu pais: <input type="text" name="txtpais" id="txtpais"> seu PAIS
+    <input type="button" value="acrescentar" onclick="adicionar()">
+
+    <div id="resposta">
+
+    </div>
+
+    <script>
+        function adicionar(){
+            var txtpais = document.querySelector(`input#txtpais`)
+            var resposta = document.querySelector(`div#resposta`)
+            var pais = Text.value
+            resposta.innerHTML = `<p> seu pais ${pais}`
+
+        }
+
+    </script>
+    
+</body>
+</html>
